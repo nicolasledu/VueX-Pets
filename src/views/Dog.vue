@@ -3,7 +3,9 @@
     <div v-for="pet in Pets" :key="pet.name">
         <div v-if="pet.species == 'Dog' && pet.name == $route.params.name">
             <h1>{{pet.name}}</h1>
+            
             <p>Birth Year : {{pet.birthYear}}</p>
+
             <p>Species : {{pet.species}}</p>
         </div>
     </div>

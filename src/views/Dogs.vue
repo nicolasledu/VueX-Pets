@@ -3,7 +3,7 @@
     <h1> Dogs :</h1>
 
     <table class="table">
-  <thead class="thead-dark">
+  <thead class="thead-light">
     <tr>  
       <th scope="col">Name</th>
 
