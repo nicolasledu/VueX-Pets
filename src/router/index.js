@@ -8,44 +8,34 @@ const routes = [
     component: Home
   },
   {
-    path: '/dogs',
-    name: 'Dogs',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/Dogs.vue')
-  },
-  {
-    path: '/dogs/:name',
-    name: 'Dog',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/Dog.vue')
-  },
-  {
     path: '/cats',
     name: 'Cats',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/Cats.vue')
+    
+    component: () => import('../views/Cats.vue')
   },
   {
     path: '/cats/:name',
     name: 'Cat',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/Cat.vue')
+    
+    component: () => import('../views/Cat.vue')
+  },
+  {
+    path: '/dogs',
+    name: 'Dogs',
+    
+    component: () => import('../views/Dogs.vue')
+  },
+  {
+    path: '/dogs/:name',
+    name: 'Dog',
+    
+    component: () => import('../views/Dog.vue')
   },
   {
     path: '/form',
-    name: 'Formulaire',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/Form.vue')
+    name: 'Form',
+   
+    component: () => import('../views/Form.vue')
   }
 ]
 

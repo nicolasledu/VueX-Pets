@@ -36,7 +36,7 @@
 <script>
 import { mapGetters, mapActions } from 'vuex';
 export default {
-  name: 'Formulaire',
+  name: 'Form',
   data(){
       return{
           name: '',
