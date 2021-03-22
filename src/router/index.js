@@ -16,7 +16,7 @@ const routes = [
     component: () => import(/* webpackChunkName: "about" */ '../views/Dogs.vue')
   },
   {
-    path: '/dogs/:id',
+    path: '/dogs/:name',
     name: 'Dog',
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
@@ -32,7 +32,7 @@ const routes = [
     component: () => import(/* webpackChunkName: "about" */ '../views/Cats.vue')
   },
   {
-    path: '/cats/:id',
+    path: '/cats/:name',
     name: 'Cat',
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route

@@ -1,24 +1,27 @@
 <template>
   <div class="about">
-    <h1>Chats :</h1>
+    <h1> Cats :</h1>
 
     <table class="table">
-  <thead class="thead-dark">
+  <thead class="thead-light">
     <tr>
-      <th scope="col">#</th>
-      <th scope="col">Nom</th>
-      <th scope="col">Date d'anniversaire</th>
-      <th scope="col">Espèce</th>
+      <th scope="col">Name</th>
+
+      <th scope="col">Species</th>
+
+      <th scope="col">Birth Year</th>
     </tr>
   </thead>
   <tbody>
 
-    <tr v-for="pet in pets" :key="pet.index" >
+    <tr v-for="pet in Pets" :key="pet.index" >
 
-      <th scope="row" v-if="pet.species == 'Cat'"></th>
+     
       <td v-if="pet.species == 'Cat'"><router-link :to="{ path: '/cats/'+ pet.name}">{{pet.name}}</router-link></td>
-      <td v-if="pet.species == 'Cat'">{{pet.birthYear}}</td>
+      
       <td v-if="pet.species == 'Cat'">{{pet.species}}</td>
+
+      <td v-if="pet.species == 'Cat'">{{pet.birthYear}}</td>
 
     </tr>
 
@@ -43,3 +46,11 @@ export default {
   components:{}
 }
 </script>
+
+<style scoped>
+
+tr{
+  color: green
+}
+
+</style>
